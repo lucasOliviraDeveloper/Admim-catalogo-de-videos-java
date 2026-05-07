@@ -1,6 +1,10 @@
 package com.fullcycle.admin.catalogo.application;
 
-public abstract class UseCase<IN, OUT> {
+import com.fullcycle.admin.catalogo.domain.category.Category;
 
-    public abstract OUT execute(IN anIn);
+public class UseCase {
+
+    public Category execute() {
+        return Category.newCategory("Filmes", "A categoria mais assistida", true);
+    }
 }
